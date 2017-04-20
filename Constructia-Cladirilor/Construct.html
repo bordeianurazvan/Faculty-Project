@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Divide&Conquer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="Construct.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo" href="#">
+                <img alt="Logo" src="../Constructia-Cladirilor/logocrop60%25.png" class="img-responsive">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Map </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Reports <span class="badge">17</span> </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-stats"></span> Ranking </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> LogOut </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="center">
+    <div class="row">
+        <div class="col-md-4 col-xs-2 col-sm-6 col-lg-6 Village">Village (23|99) </div>
+        <div class="col md-2 col-xs-1 col-sm-2 col-lg-2"></div>
+        <div class="col-md-6 col-xs-9 col-sm-4 col-lg-4 Iron" href="#" >
+            234 <img alt="Iron" src="../Constructia-Cladirilor/iron.png">
+            543 <img alt="Wood" src="../Constructia-Cladirilor/wood.png">
+            532 <img alt="Stone" src="Stone.png">
+            1000<img alt="Resources" src="../Constructia-Cladirilor/resources.png">
+        </div>
+    </div>
+    <div class="row TabelMare">
+        <table align="center" id="contentContainer" width="100%">
+            <tbody>
+            <tr>
+                <table class="content-border" width="100%">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="https://dsro.innogamescdn.com/8.80/32851/graphic/big_buildings/main1.png" alt="Clădirea principală" class="">
+                                    </td>
+                                    <td>
+                                        <h2>	Clădirea principală (Nivelul 4)
+                                        </h2>
+
+                                        În clădirea principală pot fi construite clădiri noi sau îmbunătăţite clădirile existente.
+                                        Cu cât mai înalt nivelul, cu atât mai repede pot fi construite clădiri noi.  În momentul în care clădirea principală a atins nivelul 15,
+                                        ai posibilitatea să demolezi clădiri în acest sat (necesită 100% loialitate).
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <div id="building_wrapper">
+                                <table id="buildings class" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <th width ="23%">Cladiri</th>
+                                            <th colspan="4">Necesitate</th>
+                                            <th width="30%">Construire</th>
+                                        </tr>
+                                        <tr id="main_buildrow_main">
+                                            <td>
+                                                <a><img src="https://dsro.innogamescdn.com/8.80/32851/graphic/buildings/mid/main1.png" title="Clădirea principală" alt="" class="bmain_list_img"></a>
+                                                Clădirea principală
+                                                <br>
+                                                <span style="font-size: 0.9em">Nivelul 4</span>
+                                            </td>
+                                            <td data-cost="227" class="cost_wood"><span class="icon header wood"> </span>227</td>
+                                            <td data-cost="211" class="cost_stone"><span class="icon header stone"> </span>211</td>
+                                            <td data-cost="176" class="cost_iron"><span class="icon header iron"> </span>176</td>
+                                            <td><span class="icon header time"></span>0:11:48</td>
+                                            <td class="build_options">
+
+
+                                                <a class="btn btn-build" id="main_buildlink_main_5" href="#" data-building="main">Nivelul 5</a>
+
+                                            </td>
+                                        </tr>
+                                        <tr id="main_buildrow_barracks">
+                                            <td>
+                                                <a><img src="https://dsro.innogamescdn.com/8.80/32851/graphic/buildings/mid/barracks1.png" title="Cazarmă" alt="" class="bmain_list_img"></a>
+                                                Cazarmă
+                                                <br>
+                                                <span style="font-size: 0.9em">Nivelul 3</span>
+                                            </td>
+                                            <td data-cost="400" class="cost_wood"><span class="icon header wood"> </span>400</td>
+                                            <td data-cost="357" class="cost_stone"><span class="icon header stone"> </span>357</td>
+                                            <td data-cost="180" class="cost_iron"><span class="icon header iron"> </span>180</td>
+                                            <td><span class="icon header time"></span>0:12:21</td>
+                                            <td class="build_options">
+
+                                               <a class="btn btn-build" id="main_buildlink_barracks_4" href="#" data-building="barracks">Nivelul 4</a>
+
+                                            </td>
+                                        </tr>
+                                        <tr id="main_buildrow_storage">
+                                            <td>
+                                                <a><img src="https://dsro.innogamescdn.com/8.80/32851/graphic/buildings/mid/storage1.png" title="Magazie" alt="" class="bmain_list_img"></a>
+                                                Magazie
+                                                <br>
+                                                <span style="font-size: 0.9em">Nivelul 2</span>
+                                            </td>
+                                            <td data-cost="96" class="cost_wood"><span class="icon header wood"> </span>96</td>
+                                            <td data-cost="81" class="cost_stone"><span class="icon header stone"> </span>81</td>
+                                            <td data-cost="62" class="cost_iron"><span class="icon header iron"> </span>62</td>
+                                            <td><span class="icon header time"></span>0:02:15</td>
+                                            <td class="build_options">
+
+                                                <a class="btn btn-build" id="main_buildlink_storage_3" href="#" data-building="storage">Nivelul 3</a>
+
+                                            </td>
+                                        </tr>
+                                        <tr id="main_buildrow_wall">
+                                            <td>
+                                                <a><img src="https://dsro.innogamescdn.com/8.80/32851/graphic/buildings/mid/wall1.png" title="Zid" alt="" class="bmain_list_img"></a>
+                                                Zid
+                                                <br>
+                                                <span style="font-size: 0.9em">Nivelul 1</span>
+                                            </td>
+                                            <td data-cost="63" class="cost_wood"><span class="icon header wood"> </span>63</td>
+                                            <td data-cost="128" class="cost_stone"><span class="icon header stone"> </span>128</td>
+                                            <td data-cost="25" class="cost_iron"><span class="icon header iron"> </span>25</td>
+                                            <td><span class="icon header time"></span>0:04:00</td>
+                                            <td class="build_options">
+                                                <a class="btn btn-build" id="main_buildlink_wall_2" href="#" data-building="wall">Nivelul 2</a>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
