@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Divide&Conquer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="cazarma.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo" href="#">
+                <img alt="Logo" src="logocrop60%25.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Map </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Reports <span class="badge">17</span> </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-stats"></span> Ranking </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> LogOut </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2">
+    </div>
+<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8 center">
+
+    <div class="row">
+        <div class="col-md-4 col-xs-2 col-sm-6 col-lg-6 Village">Village (23|99) </div>
+        <div class="col md-2 col-xs-1 col-sm-2 col-lb-2"></div>
+        <div class="col-md-6 col-xs-9 col-sm-4 col-lg-4 Iron" href="#" >
+            234 <img alt="Iron" src="iron.png">
+            543 <img alt="Wood" src="wood.png">
+            532 <img alt="Stone" src="Stone.png">
+            1000<img alt="Resources" src="resources.png">
+        </div>
+    </div>
+
+   <div class="troops">
+    <div class="row nume">
+       <div class="col-xs-3 col-md-3 col-lg-3 Spear">SpearMan
+           </div>
+       <div class="col-xs-3 col-md-3 col-lg-3 Axe">AxeMan
+
+       </div>
+       <div class="col-xs-3 col-md-3 col-lg-3 Sword">SwordsMan
+          </div>
+       <div class="col-xs-3 col-md-3 col-lg-3 Archer">Archer
+           </div>
+   </div>
+       <div class="row trupe">
+           <div class="col-xs-3 col-md-3 col-lg-3 Spear">
+               <img alt="spear" src="spear.png" class="img-responsive poza_spear"></div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Axe">
+               <img alt="Axe" src="Axe.png"class="img-responsive poza_axe">
+           </div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Sword">
+               <img alt="Swords" src="sword.png"class="img-responsive poza_sword"></div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Archer">
+               <img alt="Archer" src="archer.png"class="img-responsive poza_archer"></div>
+       </div>
+
+       <div class="row cost">
+           <div class="col-xs-3 col-md-3 col-lg-3 ">Cost:30
+               <img alt="spear" src="resources.png"class="img-responsive"></div>
+           <div class="col-xs-3 col-md-3 col-lg-3 ">Cost:50
+               <img alt="Axe" src="resources.png"class="img-responsive">
+           </div>
+           <div class="col-xs-3 col-md-3 col-lg-3 ">Cost:20
+               <img alt="Swords" src="resources.png"class="img-responsive"></div>
+           <div class="col-xs-3 col-md-3 col-lg-3 ">Cost:18
+               <img alt="Archer" src="resources.png"class="img-responsive"></div>
+       </div>
+       <div class="row comanda">
+           <div class="col-xs-3 col-md-3 col-lg-3 Spear_command">
+               <form>
+                   <div>
+
+                       <input type="number" class="form-control spear_form"  min="0">
+                   </div>
+               </form>
+               </div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Axe_command">
+               <form>
+                   <div>
+                       <input type="number" class="form-control axe_form"  min="0">
+                   </div>
+               </form>
+           </div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Sword_command">
+               <form>
+                   <div>
+                       <input type="number" class="form-control sword_form"  min="0">
+                   </div>
+               </form>
+               </div>
+           <div class="col-xs-3 col-md-3 col-lg-3 Archer_command">
+               <form>
+                   <div>
+                       <input type="number" class="form-control archer_form"  min="0">
+                   </div>
+               </form>
+               </div>
+
+       </div>
+       <div class="row ">
+           <button type="button" class="btn btn-warning instruct">Instruct</button>
+       </div>
+    </div>
+    <div class="container-fluid">
+        Active Commands
+       <div class="table-responsive table-bordered">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Troop Type</th>
+                <th>Troop Number</th>
+                <th>End Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Archers</td>
+                <td>300</td>
+                <td>03/04/2017 16:26</td>
+            </tr>
+            <tr>
+                <td>SwordsMan</td>
+                <td>125</td>
+                <td>03/04/2017 18:23</td>
+            </tr>
+            <tr>
+                <td>AxeMan</td>
+                <td>244</td>
+                <td>04/04/2017 10:10</td>
+            </tr>
+            </tbody>
+        </table>
+           </div>
+    </div>
+
+</div>
+<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+</body>
+</html>

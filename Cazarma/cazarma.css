@@ -1,0 +1,96 @@
+html{
+    height:100%;
+}
+body{
+    background-color: tan;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.center{
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 73%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-image: url("textura.png");
+    background-size: 100% 100%;
+}
+
+
+
+.troops{
+    margin-left:15%;
+}
+.trupe{
+   margin-top:2%;
+
+}
+.nume{
+    margin-top:2%;
+}
+.cost{
+    margin-top:2%;
+}
+
+.poza_sword{
+    margin-top:3%;
+
+}
+.poza_axe{
+    margin-top:5%;
+
+}
+
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
+
+.poza_spear{
+    width: 25%;
+    height:auto;
+}
+.poza_sword{
+    margin-top:3%;
+    width:25%;
+}
+.poza_axe{
+    margin-top:5%;
+    width:32%;
+    height:auto;
+}
+.poza_archer{
+    width:32%;
+    height:auto;
+}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   body{
+       font-size: xx-small;
+
+   }
+
+}
+
+.sword_form,.axe_form,.archer_form,.spear_form{
+    width:35%;
+}
+.active_commands{
+    margin-left:10%;
+}
+.instruct{
+
+     margin-top:2%;
+     margin-left:1.4%;
+    margin-bottom: 1%;
+}
+.container-fluid{
+    margin-left:14%;
+    margin-right: 14%;
+}
+
