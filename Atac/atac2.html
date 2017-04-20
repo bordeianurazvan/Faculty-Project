@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Divide&Conquer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="atac.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo" href="#">
+                <img alt="Logo" src="logocrop60%25.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Map </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Reports <span class="badge">17</span> </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-stats"></span> Ranking </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span> LogOut </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2">
+</div>
+<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8 center">
+    <div class="row">
+        <div class="col-md-4 col-xs-2 col-sm-6 col-lg-6 Village">Village (23|99) </div>
+        <div class="col md-2 col-xs-1 col-sm-2 col-lb-2"></div>
+        <div class="col-md-6 col-xs-9 col-sm-4 col-lg-4 Iron" href="#" >
+            234 <img alt="Iron" src="iron.png">
+            543 <img alt="Wood" src="wood.png">
+            532 <img alt="Stone" src="Stone.png">
+            1000<img alt="Resources" src="resources.png">
+        </div>
+        </div>
+ <legend class="legend">Target's coordinates</legend>
+    <div class="row coordonate">
+        <form class="form-inline">
+            <div class="form-group">
+            <label for="x">X:</label>
+            <input type="number" pattern="\d*" class="allign"  value="" maxlength="3" id="x">
+        </div>
+            <div class="form-group">
+                <label for="y">Y:</label>
+                <input type="number" pattern="\d*" class="allign"  value="" maxlength="3" id="y">
+            </div>
+        </form>
+    </div>
+    <div class="row rand_trupe">
+        <div class="col-md-6 col-lg-3 ">
+    <form class="form-inline trupe">
+
+           <div class="form-group">
+               <label for="archer"> <img alt="Archer" src="unit_archer.png"class="img-responsive"></label>
+                <input type="number" pattern="\d*" class="allign" name="t1" value="" maxlength="6" id="archer">
+          </div>
+        <div class="form-group">
+            <label for="sword"> <img alt="Sword" src="unit_sword.png"class="img-responsive"></label>
+            <input type="number" pattern="\d*" class="allign" name="t1" value="" maxlength="6" id="sword">
+        </div>
+        <div class="form-group">
+            <label for="axe"> <img alt="Axe" src="unit_axe.png"class="img-responsive"></label>
+            <input type="number" pattern="\d*" class="allign" name="t1" value="" maxlength="6" id="axe">
+        </div>
+        <div class="form-group">
+            <label for="spear"> <img alt="spear" src="unit_spear.png"class="img-responsive"></label>
+            <input type="number" pattern="\d*" class="allign" name="t1" value="" maxlength="6" id="spear">
+        </div>
+    </form>
+            </div>
+        <div class="col-xs-1 col-md-1 col-lg-1 col-sm-1">
+        <form>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Atac</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Intariri</label>
+            </div>
+        </form>
+            </div>
+        </div>
+    <div class="row">
+        <button type="submit" class="btn btn-danger btn-xs buton">Send</button>
+
+    </div>
+
+</div>
+<div class="col-md-1 col-xs-1 col-lg-1 col-sm-1"></div>
+</body>
+</html>
