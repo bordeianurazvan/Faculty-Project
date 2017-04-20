@@ -1,0 +1,56 @@
+html{
+    height:100%;
+}
+body{
+    background-color: tan;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.center{
+    background-repeat: no-repeat;
+    height: auto;
+    width: 73%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-image: url("textura.png");
+    background-size: 100% 100%;
+}
+.target{
+    margin-left:3.4%;
+}
+.coordonate{
+    margin-left:0.8%;
+    margin-top:1%;
+   width: 54%;
+
+}
+.sword_form{
+
+    float:left;
+}
+
+.trupe{
+    margin-top:2%;
+    margin-left:2%;
+}
+
+.allign{
+    width:50px;
+}
+.buton{
+    margin-left:2%;
+    color:white;
+    background-color: darkred;
+}
+
+
+
+
+
+
