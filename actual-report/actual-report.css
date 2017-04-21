@@ -33,13 +33,15 @@ body{
 .Reports{
     margin-top: 1%;
     font-size-adjust: 1;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .Table{
     margin: auto;
 }
-
+.free-space{
+    margin-top:20px
+}
 
 .Table{
     background-image: url("fontButon30%25.png");
@@ -92,23 +94,4 @@ body{
 
     }
 
-}
-.c-link:link {
-    text-decoration: none;
-    color: black;
-}
-
-.c-link:visited {
-    text-decoration: none;
-    color: black;
-}
-
-.c-link:hover {
-    text-decoration: none;
-    color: darkred;
-}
-
-.c-link:active {
-    text-decoration: none;
-    color: black;
 }
