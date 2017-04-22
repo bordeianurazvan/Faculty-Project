@@ -4,7 +4,7 @@ html{
 body{
     background-color: tan;
     background-repeat: no-repeat;
-    height:auto;
+    height:100%;
     width:100%;
     overflow: hidden;
     background-size: cover;
@@ -14,68 +14,53 @@ body{
 
 .center{
     background-repeat: no-repeat;
-    height: 70%;
-    width: 73%;
+    height: auto;
+    width: auto;
     padding: 15px;
     margin: auto;
     background-image: url("textura.png");
     background-size: 100% 100%;
 }
-
-
 .row{
     margin: auto;
-
 }
 
-.Overview{
-    margin-top: 1%;
-    font-size-adjust: 1;
-    font-size: 25px;
-}
-.btn{
-    background: #6c4824;
-    border-radius: 5px;
-    border: 1px solid #000;
-    color: #fff;
-    padding: 3px;
-    text-align: center;
-    margin: 2px;
-    font-family: Verdana, Arial;
-}
+
+
 .btn-primary,
-.btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
     background-color: burlywood;
-    border-color: #1d1e1f;
+    border-color: #000000 ;
     color: #000000;
     font-size: small;
     margin: auto;
     padding: 5px;
 }
 
-.Table{
-    background-image: url("fontButon30%25.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: auto;
-    width : 90%;
+.btn-primary:hover{
+    background-color: burlywood;
 }
-.paginare{
-    margin:auto ;
-}
-table.no-border tr td, .table.no-border tr th {
-    border-width: 0;
-}
-@media  only screen and (min-device-width : 300px) and (max-device-width : 1000px) {
 
-    .center{
-        width: 100%;
-        padding: 1px;
-    }
+.Imagine{
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+    margin-top : 1%;
+}
 
+.coloana{
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top : 1%;
+    alignment: right;
+    width: auto;
+    background-color: tan;
+}
+
+.trupe{
+    padding: 2%;
 }
 
 @media (min-width: 768px) and (max-width: 855px) {
@@ -129,3 +114,13 @@ table.no-border tr td, .table.no-border tr th {
 
 }
 
+@media  only screen and (min-width : 300px) and (max-width : 1000px) {
+
+    .center{
+        width: 100%;
+        padding: 1px;
+        /* height: 85%;*/
+        height: auto;
+    }
+
+}
